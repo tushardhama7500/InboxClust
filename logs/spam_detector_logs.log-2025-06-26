@@ -1,0 +1,86 @@
+2025-06-26 15:57:51  Unique Id: 5541518318 ############################## Working of fetch_emails.py start from here. ##############################
+
+2025-06-26 15:57:51  Unique Id: 5541518318 Connecting to the email server...
+2025-06-26 15:57:51  Unique Id: 5541518318 Connected and logged in successfully.
+2025-06-26 15:57:51  Unique Id: 5541518318 Total emails in inbox: 13611
+2025-06-26 15:57:51  Unique Id: 5541518318 Emails to be fetched (as per limit 13000): 13000
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 500 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 1000 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 1500 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 2000 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 2500 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 3000 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 3500 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 4000 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 4500 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 5000 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Error processing email 5435: unknown encoding: unknown-8bit
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 5500 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 6000 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 6500 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 7000 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 7500 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 8000 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 8500 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 9000 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 9500 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 10000 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 10500 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 11000 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 11500 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 12000 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 12500 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Fetched 13000 emails...)
+2025-06-26 15:57:51  Unique Id: 5541518318 Disconnected from the server.
+
+2025-06-26 17:20:28  Unique Id: 5128276408 ############################## Working of fetch_spam_emails.py start from here. ###########################
+ 
+2025-06-26 17:20:28  Unique Id: 5128276408 Connecting to email server...
+2025-06-26 17:20:28  Unique Id: 5128276408 Connected and logged in successfully.
+2025-06-26 17:20:28  Unique Id: 5128276408 Selecting Spam folder...
+2025-06-26 17:20:28  Unique Id: 5128276408 Total spam emails in inbox: 93
+2025-06-26 17:20:28  Unique Id: 5128276408 Saved 93 spam emails to 'clusters/spam.csv'
+2025-06-26 17:20:28  Unique Id: 5128276408 ############################## Working of fetch_spam_emails.py ends here. ######################
+
+2025-06-26 17:20:28  Unique Id: 5128276408 Disconnected from email server.
+2025-06-26 17:37:59  Unique Id: 8227930449 ################################ Working of SpamCleaner start from here. ###################################
+
+2025-06-26 17:37:59  Unique Id: 8227930449 Error loading file: [Errno 2] File b'clusters/spam1.csv' does not exist: b'clusters/spam1.csv'
+Traceback (most recent call last):
+  File "SpamCleaner.py", line 15, in load_data
+    self.df = pd.read_csv(self.input_file)
+  File "/Czentrix/apps/erp_python/venv/lib64/python3.6/site-packages/pandas/io/parsers.py", line 685, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/Czentrix/apps/erp_python/venv/lib64/python3.6/site-packages/pandas/io/parsers.py", line 457, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "/Czentrix/apps/erp_python/venv/lib64/python3.6/site-packages/pandas/io/parsers.py", line 895, in __init__
+    self._make_engine(self.engine)
+  File "/Czentrix/apps/erp_python/venv/lib64/python3.6/site-packages/pandas/io/parsers.py", line 1135, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/Czentrix/apps/erp_python/venv/lib64/python3.6/site-packages/pandas/io/parsers.py", line 1917, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 689, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] File b'clusters/spam1.csv' does not exist: b'clusters/spam1.csv'
+2025-06-26 17:38:42  Unique Id: 2432568686 ################################ Working of SpamCleaner start from here. ###################################
+
+2025-06-26 17:38:42  Unique Id: 2432568686 Loaded clusters/spam.csv successfully.
+2025-06-26 17:38:42  Unique Id: 2432568686 Data cleaned successfully.
+2025-06-26 17:38:42  Unique Id: 2432568686 Cleaned data saved to clusters/spam_cleaned.csv
+2025-06-26 17:38:42  Unique Id: 2432568686 Deleted original file: clusters/spam.csv
+2025-06-26 17:38:42  Unique Id: 2432568686 ################################ Working of SpamCleaner ends here. ###################################
+
+2025-06-26 17:40:26  Unique Id: 8835663650 ################# Working of cluster_email.py start from here. ########################
+
+2025-06-26 17:40:26  Unique Id: 8835663650 [INFO] Loaded 12999 emails from 'emails_data.csv'.
+2025-06-26 17:40:26  Unique Id: 8835663650 [INFO] Text data preprocessing complete.
+2025-06-26 17:40:26  Unique Id: 8835663650 [INFO] Text vectorization successful.
+2025-06-26 17:40:26  Unique Id: 8835663650 [INFO] Clustering complete. 5 clusters created.
+2025-06-26 17:40:26  Unique Id: 8835663650 [INFO] Saved 2479 emails to 'clusters/cluster_0.csv'.
+2025-06-26 17:40:26  Unique Id: 8835663650 [INFO] Saved 6556 emails to 'clusters/cluster_1.csv'.
+2025-06-26 17:40:26  Unique Id: 8835663650 [INFO] Saved 952 emails to 'clusters/cluster_2.csv'.
+2025-06-26 17:40:26  Unique Id: 8835663650 [INFO] Saved 789 emails to 'clusters/cluster_3.csv'.
+2025-06-26 17:40:26  Unique Id: 8835663650 [INFO] Saved 2223 emails to 'clusters/cluster_4.csv'.
+2025-06-26 17:40:26  Unique Id: 8835663650 [SUCCESS] Clustering process completed.
+2025-06-26 17:40:26  Unique Id: 8835663650 ################# Working of cluster_email.py ends here. ########################
+

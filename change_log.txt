@@ -1,0 +1,68 @@
+📜 Project Changelog:
+
+
+cluster_emails.py:
+	Clusters emails into 5 groups using unsupervised machine learning.
+
+emails_dataset.csv:
+	Final labeled dataset used for training the spam detection model.
+
+flowchart.py:
+	Generates and downloads the flowchart of this project using Graphviz.
+
+logs.py:
+	Generates daily log files such as: spam_detector_logs.log-2025-06-26, spam_detector_logs.log-2025-06-27, etc.
+
+spam_model.pkl:
+	Trained spam classification model (serialized with joblib).
+
+clusters/:
+	Directory containing cluster-wise email CSVs (cluster_0.csv to cluster_4.csv).
+
+email_utils.py:
+	Email utility functions (e.g., delete, archive, move to label).
+
+lang/:
+	Directory that contains language-specific JSON files (e.g., en.json, hi.json).
+
+merger_csv.py:
+	Merges cleaned and labeled data from clusters and spam into a final dataset.
+
+SpamCleaner.py:
+	Cleans spam emails by removing extra characters, whitespace, etc.
+
+stamp.py:
+	Generates a unique identifier (timestamp or number) for tracking.
+
+config.py:
+	Stores all configuration values such as CLUSTER_LABEL_MAP, thresholds, etc.
+
+fetch_emails.py:
+	Fetches emails from Gmail Inbox and saves them to emails_data.csv.
+
+telegram_api.py:
+	Handles Telegram bot interactions (e.g., receiving commands, handling button callbacks).
+
+vectorizer.pkl:
+	Fitted TF-IDF vectorizer used for transforming email text before classification.
+
+email_notifier_tele.py:
+	Checks Gmail inbox every minute and sends email alerts to Telegram with options (delete, archive, snooze, reply).
+
+fetch_spam_emails.py:
+	Fetches emails from Gmail Spam folder and saves them to clusters/spam.csv.
+
+LICENSE:
+	This project is licensed under the MIT License.
+
+requirements.txt:
+	Lists all the required Python libraries and dependencies.
+
+find_label.py:
+	Assigns human-readable labels to clustered emails using the configuration mapping.
+
+logs/:
+	Directory to store generated log files.
+
+spam_detector.py:
+	Trains a supervised machine learning model for spam classification and saves it.

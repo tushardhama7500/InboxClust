@@ -1,0 +1,16 @@
+{
+  "ask_language": "🌐 Please choose your language:",
+  "language_changed": "✅ Language changed to *{lang}*!",
+  "email_deleted": "✅ This email will be deleted.\nAll further actions are disabled.",
+  "delete_failed": "❌ Failed to delete email.",
+  "choose_label": "📂 Please reply with the label name (e.g., Work, NEW MAIL) to archive this email.",
+  "email_moved": "📥 Email moved to *{label}* folder.",
+  "move_failed": "❌ Failed to move email. Try using a different label name.",
+  "send_ai_confirm": "You want to send this as reply?",
+  "ai_error": "❌ Failed to generate AI reply. Please try again.",
+  "ai_sent": "✉️ Your AI reply has been sent!",
+  "cancel_reply": "😊 Okay fine. Thank you!",
+  "unknown_command": "❓ I didn't understand that command.",
+  "no_email_found": "⚠️ No email found to perform this action."
+}
+
