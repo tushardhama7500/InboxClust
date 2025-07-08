@@ -7,23 +7,41 @@ This project is an end-to-end intelligent email processing system that integrate
 ## 📂 Project Structure
 
 📁 email-intelligence-system/
+
 ├── fetch_emails.py # Fetch Inbox emails and save to emails_data.csv
+
 ├── fetch_spam_emails.py # Fetch Spam emails and save to clusters/spam.csv
+
 ├── SpamCleaner.py # Clean spam emails and save cleaned CSV
+
 ├── cluster_emails.py # Apply KMeans clustering to group emails
+
 ├── config.py # Contains CLUSTER_LABEL_MAP for manual labels
+
 ├── find_label.py # Map cluster numbers to labels
+
 ├── merger_csv.py # Merge all CSVs into one final dataset
+
 ├── spam_detector.py # Train and save spam classifier
+
 ├── email_notifier_tele.py # Poll emails and send Telegram alerts
+
 ├── telegram_api.py # Handle Telegram actions
+
 ├── email_utils.py # Email action helper (archive, delete, etc.)
+
 ├── clusters/ # Contains cluster CSV files
+
 ├── emails_dataset.csv # Final labeled dataset
+
 ├── spam_model.pkl # Trained spam classifier
+
 ├── vectorizer.pkl # Fitted vectorizer
+
 ├── DOCUMENTATION.md # Feature documentation with screenshots
+
 ├── LICENSE # Open-source license
+
 └── README.md # This file
 
 ---
@@ -128,10 +146,11 @@ Options:
    ```bash
    git clone https://github.com/your-username/email-intelligence-system.git
    cd email-intelligence-system
-2.Configure your Gmail and Telegram Bot credentials securely.
+2. Configure your Gmail and Telegram Bot credentials securely.
 
-3.Run the files in the following sequence:
+3. Run the files in the following sequence:
 
+```
 python fetch_emails.py
 python fetch_spam_emails.py
 python SpamCleaner.py
@@ -141,6 +160,7 @@ python find_label.py
 python merger_csv.py
 python spam_detector.py
 python email_notifier_tele.py
+```
 
 4. Use Telegram to receive and manage new email alerts in real-time.
 
